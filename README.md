@@ -1,61 +1,122 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Tech Vogue - Galaxy Edition (UAS Pemrograman Internet)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-10.x-red?style=for-the-badge&logo=laravel)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql)
 
-## About Laravel
+**Tech Vogue Archive** adalah aplikasi web berbasis Blog yang dikembangkan untuk memenuhi tugas **Ujian Akhir Semester (UAS)** mata kuliah Pemrograman Internet.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Aplikasi ini dibangun menggunakan Framework **Laravel** dengan menerapkan arsitektur **MVC (Model-View-Controller)**. Desain antarmuka mengusung tema *"Galaxy / Deep Space"* yang modern, terinspirasi dari gaya visual media teknologi *The Verge*, lengkap dengan fitur Glassmorphism dan Neon Accents.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🚀 Fitur Utama
 
-## Learning Laravel
+1.  **Arsitektur MVC:** Struktur kode terpisah rapi antara Model (Database), View (Blade), dan Controller (Logika).
+2.  **Manajemen Artikel (CRUD):**
+    * **Create:** Menulis artikel baru dengan judul, isi, penulis, tanggal publikasi, dan gambar.
+    * **Read:** Menampilkan daftar artikel di Dashboard dan Halaman Depan.
+    * **Update:** Mengedit konten artikel yang sudah ada.
+    * **Delete:** Menghapus artikel dari database.
+3.  **Sistem Autentikasi:** Login aman untuk Admin menggunakan **Laravel Breeze**. Halaman dashboard terlindungi (hanya bisa diakses setelah login).
+4.  **Desain UI Premium (Galaxy Theme):**
+    * **Public View:** Halaman depan responsif dengan *Hero Section*, *Grid Layout*, dan *Running Text* (Marquee).
+    * **Detail View:** Halaman baca artikel dengan tipografi editorial (*Manrope* & *Inter*) dan sidebar *sticky*.
+    * **Dark Mode:** Latar belakang *Deep Space* dengan efek *Glow* dan kartu transparan (*Glassmorphism*).
+5.  **Database Seeder:** Data dummy otomatis terisi (User Admin & Artikel Contoh) sekali perintah.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Teknologi yang Digunakan
 
-## Laravel Sponsors
+* **Framework:** Laravel 10.x / 11.x
+* **Language:** PHP 8.1+
+* **Database:** MySQL
+* **Frontend:** Blade Template & Tailwind CSS (CDN)
+* **Auth:** Laravel Breeze
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+---
 
-### Premium Partners
+## ⚙️ Panduan Instalasi (Cara Menjalankan)
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Ikuti langkah-langkah berikut untuk menjalankan project ini di komputer lokal Anda:
 
-## Contributing
+### 1. Clone Repository
+Salin repository ini ke folder lokal Anda.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+git clone [https://github.com/Fawaz2410/lutfi_blog](https://github.com/Fawaz2410/lutfi_blog)
+cd lutfi-blog
+```
 
-## Code of Conduct
+### 2. Install Dependencies
+Install pustaka PHP dan aset frontend (pastikan folder vendor tidak ikut di-upload manual).
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+composer install
+npm install
+npm run build
+```
 
-## Security Vulnerabilities
+### 3. Konfigurasi Environment (.env)
+Duplikat file konfigurasi contoh menjadi file environment aktif.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+cp .env.example .env
+Buka file `.env` dan atur koneksi database Anda (pastikan database sudah dibuat di phpMyAdmin):
+```
 
-## License
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=uas_tech_blog
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# Blogfyysven
-# lutfi_blog
+### 4. Generate Key & Migrate Database
+Generate application key dan jalankan migrasi beserta seeder untuk mengisi data awal.
+
+Bash
+
+php artisan key:generate
+php artisan migrate:fresh --seed
+
+### 5. Jalankan Server
+Jalankan server lokal Laravel.
+
+```Bash
+
+php artisan serve
+Buka browser dan akses alamat: http://localhost:8000
+```
+
+### 🔐 Akun Login Admin
+Gunakan kredensial berikut untuk masuk ke Dashboard dan mengelola artikel:
+
+- Email: admin@techvogue.com
+- Password: password123
+
+### 📂 Struktur Database
+- Aplikasi ini menggunakan tabel utama:
+- users: Menyimpan data autentikasi admin.
+- articles: Menyimpan data berita teknologi dengan atribut:
+- id (Primary Key)
+- title (String) - Judul Artikel
+- content (Text) - Isi Artikel
+- author (String) - Penulis
+- published_at (Date) - Tanggal Terbit
+- image_url (String) - Link Gambar
+- timestamps (Created_at & Updated_at)
+
+
+### 👤 Identitas Mahasiswa
+- Nama: Lutfi Anjar
+- NIM: C2383207001
+- Kelas: PTI 5A
+- Prodi: Pendidikan Teknologi Informasi
+- Universitas: Universitas Muhammadiyah Tasikmalaya
+- Mata Kuliah: Pemrograman Internet
+
+Project ini dibuat semata-mata untuk keperluan ujian akademis dan pembelajaran framework Laravel.
