@@ -78,10 +78,10 @@ DB_PASSWORD=
 ### 4. Generate Key & Migrate Database
 Generate application key dan jalankan migrasi beserta seeder untuk mengisi data awal.
 
-Bash
-
+```Bash
 php artisan key:generate
 php artisan migrate:fresh --seed
+```
 
 ### 5. Jalankan Server
 Jalankan server lokal Laravel.
